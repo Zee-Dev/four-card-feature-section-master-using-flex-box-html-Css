@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    /* ### Primary */
+
+    --Team: hsl(0, 78%, 62%);
+    --Supervisor: hsl(180, 62%, 55%);
+    --Karma: hsl(34, 97%, 64%);
+    --Calculator: hsl(212, 86%, 64%);
+
+
+    /* ### Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --bg-color: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1,
+h3 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+
+}
+
+/* Main-Section */
+#main {
+    width: 85%;
+    margin: auto;
+}
+
+/* Heading-Section */
+.hero-section {
+    text-align: center;
+    margin: 4em 0 4em;
+}
+
+.first-hero-p {
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.second-hero-p {
+    width: 45%;
+    margin: 0.5em auto 0;
+}
+
+/* Four-Cards-Section */
+.four-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-card,
+.middle-card,
+.right-card {
+    width: 100%;
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+    box-shadow: 0px 0px 11px -6px #fff;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.supervisor {
+    border-top: 4px solid var(--Supervisor);
+    margin: 9em 2em 0 0;
+}
+
+.team-builder {
+    border-top: 4px solid var(--Team);
+
+}
+
+.karma {
+    border-top: 4px solid var(--Karma);
+    margin-top: 2em;
+
+}
+
+.calculator {
+    border-top: 4px solid var(--Calculator);
+    margin: 9em 0 0 2em;
+}
+
+.cards-p {
+    margin: 0.5em 0 3em;
+}
+
+/* Attribution */
+.attribution {
+    text-align:center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media(max-width: 1024px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1,
+    .first-hero-p {
+        font-size: 1.5rem;
+    }
+
+    .second-hero-p {
+        width: 100%;
+    }
+
+    .four-cards {
+        flex-direction: column;
+    }
+
+    .supervisor,
+    .calculator,
+    .karma {
+        margin: 0;
+    }
+
+    .supervisor,
+    .team-builder,
+    .karma {
+        margin-bottom: 2em;
+    }
+
+
+}
